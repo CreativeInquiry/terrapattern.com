@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- PER-PAGE META -------------------------------------------------- -->
+    <meta charset='utf-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link href='images/favicon.ico' rel='icon' type='image/png'>
+    <title>Terrapattern</title>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <meta content='' name='author'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    
+    <!-- CSS ------------------------------------------------------------ -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='css/animate.css' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet'>
+    <link href='css/responsive.css' rel='stylesheet'>
+    
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-78282433-1', 'auto', {'allowLinker': true});
+      ga('require', 'autotrack');
+      ga('require', 'linker');
+      ga('linker:autoLink', ['www.terrapattern.com', 'pgh.terrapattern.com' ,'sf.terrapattern.com' ,'nyc.terrapattern.com' ,'detroit.terrapattern.com' ,'berlin.terrapattern.com' ,'miami.terrapattern.com' ,'austin.terrapattern.com'] );
+      ga('send', 'pageview');
+    </script>
+    <!--
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/0.6.5/autotrack.js'></script>
+    -->
+  </head>
+  <body></body>
+  <header class='animated-header pages-header' id='top-bar'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <div class='navbar-brand'>
+          <a href='index.html'>
+            <img alt='' src='images/terrapattern_logo_white.png'>
+          </a>
+          <em>_alpha</em>
+        </div>
+      </div>
+      <nav class='navbar collapse navbar-collapse navbar-right' role='navigation'>
+        <div class='main-menu'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='dropdown'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                Search a City
+                <span class='caret'></span>
+              </a>
+              <div class='dropdown-menu'>
+                <ul>
+                  <li>
+                    <a href='index-pgh.html'>Pittsburgh</a>
+                  </li>
+                  <li>
+                    <a href='index-sf.html'>San Francisco</a>
+                  </li>
+                  <li>
+                    <a href='index-nyc.html'>New York City</a>
+                  </li>
+                  <li>
+                    <a href='index-detroit.html'>Detroit</a>
+                  </li>
+                  <li>
+                    <a href='index-berlin.html'>Berlin</a>
+                  </li>
+                  <li>
+                    <a href='index-miami.html'>Miami</a>
+                  </li>
+                  <li>
+                    <a href='index-austin.html'>Austin</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href='about.html'>About</a>
+            </li>
+            <li>
+              <a href='team.html'>Team</a>
+            </li>
+            <li>
+              <a href='faq.html'>FAQ</a>
+            </li>
+            <li>
+              <a href='references.html'>References</a>
+            </li>
+            <li>
+              <a href='press.html'>Press</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class='global-page-header'>
+    <div class='container header-content'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='block'>
+            <h1>FAQ</h1>
+            <div class='col-md-8 header-description'>
+              <p class='prose'></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12 faq'>
+          <h3 id="what-39-s-the-basic-idea">What&#39;s the basic idea?</h3>
+          
+          <p>Terrapattern is a prototype that provides <em>similar-image search for satellite photos</em>&mdash;an open-source, open-ended tool for exploring the unmapped, and mapping the unmappable. Click an interesting spot in a map of New York, San Francisco, Detroit or Pittsburgh, and Terrapattern will find other locations that look similar in that city.</p>
+          
+          <ul>
+          <li><strong>YOU</strong> click on a &quot;feature of interest&quot; in a satellite image.</li>
+          <li><strong>TERRAPATTERN</strong> returns a batch of the most similar-looking places nearby.</li>
+          <li><strong>YOU</strong> can then download a list of these locations in GeoJSON format.</li>
+          </ul>
+          
+          <hr>
+          
+          <h3 id="what-can-i-use-terrapattern-for">What can I use Terrapattern for?</h3>
+          
+          <p>The Terrapattern tool is ideal for locating specialized <a href="https://en.wikipedia.org/wiki/Nonbuilding_structure">nonbuilding structures</a> and other forms of otherwise unremarkable <a href="https://en.wikipedia.org/wiki/Soft_infrastructure">soft infrastructure</a> that aren&#39;t usually indicated on maps. For example, one of our friends is using it to find disused swimming pools—for <a href="http://www.epictv.com/media/podcast/inside-californias-guerrilla-pool-skate-scene-%7C-pool-nation-ep-1/600243">guerilla skateboarding</a>.</p>
+          
+          <p>More generally, we hope you can help us understand how the Terrapattern project could useful to <em>you</em>! We especially invite citizen scientists, data journalists, humanitarian researchers, and other domain experts to tell us about how our app is, or could be, of use. For some of the case studies which inspired us, please see our <a href="about.html"><strong>about</strong></a> page. To share some of your own ideas, complete this <a href="http://goo.gl/forms/8T7zY28nHm"><strong>brief survey</strong></a>.</p>
+          
+          <hr>
+          
+          <h3 id="how-does-it-work">How does it work?</h3>
+          
+          <p>Behind the scenes, Terrapattern&#39;s search is based on two tricks.</p>
+          
+          <p>The first trick is a deep convolutional neural network (DCNN). We feed the DCNN hundreds of thousands of satellite images that have been categorized in <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, teaching it to predict the category of a place from a satellite photo. In the process, it learns which visual features are important for classifying satellite imagery. After training, we compute descriptions for millions more satellite photos that cover various regions of interest, such as New York City. When we want to find places that are similar to your query, we just find places with similar descriptions.</p>
+          
+          <p>It can take a long time to search all the descriptions, so we have another trick. The <a href="https://github.com/manzilzaheer/CoverTree">SG Trees</a> algorithm precomputes relationships between the descriptions, allowing us to do a search in just a second or two.</p>
+          
+          <hr>
+          
+          <h3 id="the-results-i-39-m-getting-don-39-t-seem-accurate">The results I&#39;m getting don&#39;t seem accurate.</h3>
+          
+          <p>Sure. Here are some reasons why that may be true:</p>
+          
+          <ul>
+          <li>The Terrapattern project uses <em>tile-based</em> search, not <em>pixel-based</em> search. In other words, the tool finds places that are similar to the <em>map tile</em> you clicked in—not the exact <em>object</em> you clicked on. As a result, the system may be serving up tiles that match your selection in ways that are different than the ones you&#39;re expecting. If possible, experiment with selecting a tile that contains a better example of your object of interest. We&#39;re working on some ways of improving this.</li>
+          <li>The Terrapattern tool is <em>scale dependent</em>. Our model is developed from Google map tiles analyzed at <a href="http://gis.stackexchange.com/questions/7430/what-ratio-scales-do-google-maps-zoom-levels-correspond-to">magification level 19</a>. At the latitude of New York City, these 256x256 pixel tiles represent portions of the earth that are roughly 50 meters across. This means that it may be difficult or unreliable to search for features smaller than ~10 meters, or larger than ~100 meters.</li>
+          <li>Related to the above, some features fall on the <em>boundaries</em> between map tiles. As a result, they may not rise to the top of search results as quickly as features that occur near the center of map tiles. We&#39;re working on a fix for this, too.</li>
+          <li>It&#39;s possible that the map tiles returned in response to your searches are fresher than the data we analyzed in May 2016. In other words, the situation on-the-ground may have changed: there could have been new construction, demolition, seasonal variation, etc.</li>
+          <li>It&#39;s possible that you may have chosen to search for something that&#39;s genuinely <em>unique</em>, and there&#39;s really nothing else quite like it around. For example, the <a href="https://www.google.com/maps/place/Sandcastle+Water+Park/@40.3980801,-79.9275436,604a,20y,317.39h/data=!3m1!1e3!4m5!3m4!1s0x8834f02d67fb76bd:0xf1b45395cec34844!8m2!3d40.3979202!4d-79.9273153">Sandcastle Waterpark</a> in Pittsburgh is extremely distinctive.</li>
+          </ul>
+          
+          <hr>
+          
+          <h3 id="i-made-a-cool-discovery-with-terrapattern-how-can-i-share-it">I made a cool discovery with Terrapattern. How can I share it?</h3>
+          
+          <p>We&#39;d love to hear your stories and feedback! If you discover something interesting, send a tweet with the hashtag <a href="https://twitter.com/hashtag/terrapattern">#terrapattern</a> and the URL of your search. We also invite you to complete <a href="http://goo.gl/forms/8T7zY28nHm">this brief visitor survey</a> to tell us what you think!</p>
+          
+          <hr>
+          
+          <h3 id="how-is-this-project-different-from-related-work">How is this project different from related work?</h3>
+          
+          <p>We suspect that most of the big players in the space of satellite imaging, such as Google, Microsoft, Digital Globe, Planet.com, and others are exploring the opportunities afforded by machine learning&mdash;particularly in light of recent and significant advances in convolutional neural networks and other deep learning techniques.</p>
+          
+          <p>One of the main features which distinguishes the Terrapattern project is our emphasis on allowing our visitors to search, in an open-ended way, for <em>user-defined</em> (&quot;out-of-set&quot;) categories. By contrast, most of the systems listed in our <a href="references.html"><strong>reference</strong></a> page are designed to locate and identify specific things-with-names, such as roads, trails, or crosswalks. For more information, please see our <a href="about.html"><strong>about</strong></a> page.</p>
+          
+          <hr>
+          
+          <h3 id="why-have-you-offered-so-few-cities">Why have you offered so few cities?</h3>
+          
+          <p>We&#39;re adding more soon! But for this alpha prototype, this is the scale we could achieve. Storing the model data for each metro region requires about 10GB of active RAM. (That&#39;s <em>RAM</em>&mdash;not hard disk.) To store and serve a searchable model for (say) the entire United States would require nearly 2,000 times as much RAM and CPU power as we&#39;re currently leasing, and the development of a much more sophisticated software architecture as well. Think of the <em>Terrapattern</em> project as a proof-of-concept probe to test how (or whether) &quot;visual query-by-example&quot; for satellite imagery might become a part of our everyday future. Remember, you saw it here first :)</p>
+          
+          <hr>
+          
+          <h3 id="why-did-you-select-the-cities-you-did">Why did you select the cities you did?</h3>
+          
+          <p>There are many regions of the world that might benefit from being studied or mapped with a tool similar to ours. The work involved in doing so, however, is not trivial. &quot;<a href="https://en.wikipedia.org/wiki/Evgeny_Morozov#To_Save_Everything.2C_Click_Here:_The_Folly_of_Technological_Solutionism">Solutionist</a>&quot; approaches may well do more harm than good. We caution interested readers not to say &quot;OMG let&#39;s use this for all the humanitarian problems&quot;, and instead consider partnering with or studying the work of an informed organization, such as the Harvard Humanitarian Initiative&#39;s <a href="http://hhi.harvard.edu/resources/satellite-sentinel-project">Satellite Sentinel Project</a>.</p>
+          
+          <p>For this alpha prototype, we deliberately sidestepped regions suffering from profound humanitarian or other crises, and instead selected cities primarily for their personal signficance. For example, most of our team members currently call Pittsburgh home, and it was easiest to test our tool in familiar territory. We additionally selected New York City, San Francisco and Detroit because so many of our friends and peers live there&mdash;especially those exploring new intersections of art, design, journalism, technology, data science and social change. In some cases, at our discretion, we have also presented some cities in response to user requests.</p>
+          
+          <hr>
+          
+          <h3 id="is-this-art">Is this art?</h3>
+          
+          <p>Maybe.</p>
+          
+          <hr>
+          
+          <h3 id="who-are-you-and-who-funded-this">Who are you, and who funded this?</h3>
+          
+          <p>We&#39;re a group of new-media artists, creative technologists, and students who are affiliated in various ways with the Frank-Ratchye <a href="studioforcreativeinquiry.org">STUDIO for Creative Inquiry</a> at Carnegie Mellon University, a lab for experimental research at the intersection of art, science, technology and culture. This project was made possible by a grant in Media Innovation from the <a href="http://knightfoundation.org/grants/201551228/">Knight Foundation</a> <a href="http://www.knightfoundation.org/funding-initiatives/knight-prototype-fund/">Prototype Fund</a>. For more information, please see our <a href="team.html"><strong>team</strong></a> page.</p>
+          
+          <hr>
+          
+          <h3 id="how-did-you-get-the-idea-for-terrapattern">How did you get the idea for Terrapattern?</h3>
+          
+          <p>We first became interested in how satellite imagery could help people make interesting discoveries, in early 2009, when we learned how Dr. Sabine Begall <a href="http://www.pnas.org/content/105/36/13451.abstract">discovered</a> that cows tend to align themselves with the earth&#39;s magnetic field. We became motivated to make an open-source tool in 2014, when we learned about how <a href="http://www.wsj.com/articles/SB10001424052702303497804579240182187225264">Wall Street traders were using insights</a> from satellite imagery to game the financial system, while ecological and humanitarian initiatives like <a href="http://maaproject.org/en/">MAAP</a> and the <a href="http://www.satsentinel.org/">Satellite Sentinel Project</a> were using it to make the world a better place. Of course, like a lot of people, we&#39;ve also been very impressed and inspired by Google&#39;s &quot;<a href="https://www.google.com/intl/es419/insidesearch/features/images/searchbyimage.html">search-by-image</a>&quot; feature.</p>
+          
+          <hr>
+          
+          <h3 id="what-data-do-you-collect-from-this-site-39-s-visitors">What data do you collect from this site&#39;s visitors?</h3>
+          
+          <p><em>The following statement constitutes our privacy policy:</em> We are strongly committed to protecting the privacy and anonymity of the visitors to this site. We collect visitor data using Google Analytics, and we only share collected information in aggregate (such as most commonly clicked locations). We do not otherwise collect any visitor information, and we don&#39;t track or profile you. We also collect user data from the optional <a href="http://goo.gl/forms/8T7zY28nHm">visitor feedback survey</a>.</p>
+          
+          <hr>
+          
+          <h3 id="how-is-terrapattern-licensed">How is Terrapattern licensed?</h3>
+          
+          <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Terrapattern</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://terrapattern.com" property="cc:attributionName" rel="cc:attributionURL">Golan Levin, David Newbury, Kyle McDonald, Irene Alvarado, Aman Tiwari, and Manzil Zaheer</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. The Terrapattern code and data files are free software and open source, made available under <a href="https://en.wikipedia.org/wiki/MIT_License">the MIT Licence</a>.</p>
+          
+          <hr>
+          
+          <h3 id="how-should-i-cite-this-project">How should I cite this project?</h3>
+          
+          <p>Levin, G., Newbury, D., McDonald, K., Alvarado, I., Tiwari, A., and Zaheer, M. &quot;Terrapattern: Open-Ended, Visual Query-By-Example for Satellite Imagery using Deep Learning&quot;. <a href="http://terrapattern.com"><em>http://terrapattern.com</em></a>, 24 May 2016.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='final-section' id='call-to-action'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+          <div class='block'>
+            <h3 class='wow fadeInDown export' data-wow-delay='.3s' data-wow-duration='500ms'>My question is not addressed here!</h3>
+            <p class='wow fadeInDown' data-wow-delay='.5s' data-wow-duration='500ms'>
+              We'd love to help. Please feel free to get in touch with us via email at
+              <a href='mailto:contact@terrapattern.com'>contact@terrapattern.com</a>
+              or connect with lead investigator
+              <a href='https://twitter.com/golan'>@golan</a>
+              on Twitter.
+            </p>
+          </div>
+        </div>
+        <div class='col-md-2'></div>
+      </div>
+    </div>
+  </section>
+  <footer id='footer'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-5'>
+          <h4 id="terrapattern">Terrapattern</h4>
+          
+          <p>Enabling citizen scientists, journalists, and other researchers to detect “patterns of interest” in satellite imagery through an open-source search tool.</p>
+          
+          <p>Developed at the <a href="http://studioforcreativeinquiry.org/">Frank-Ratchye STUDIO for Creative Inquiry</a> at Carnegie Mellon University with support from the <a href="http://knightfoundation.org/grants/201551228/">John S. and James L. Knight Foundation</a> <a href="http://www.knightfoundation.org/funding-initiatives/knight-prototype-fund/">Prototype Fund</a>.</p>
+          <a href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license'>
+            <img alt='Creative Commons License' src='images/cc_by_sa.svg' style='border-width:0'>
+          </a>
+        </div>
+        <div class='col-md-2 col-md-offset-2 reference_links hidden-sm hidden-xs'>
+          <h4 id="links">Links</h4>
+          
+          <ul>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern">Terrapattern Github</a></li>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern-website">Terrapattern Site Github</a></li>
+          <li><a href="https://twitter.com/hashtag/terrapattern">#Terrapattern Tweets</a></li>
+          <li><a href="http://goo.gl/forms/8T7zY28nHm">Visitor Survey</a></li>
+          </ul>
+        </div>
+        <div class='col-md-2 col-md-offset-1 contributors'>
+          <div class='row'>
+            <div class='col-md-12 hidden-sm hidden-xs'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JAVASCRIPTS ------------------------------------------------------- -->
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- 
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  -->
+
+  <script src='js/jquery-1.12.4.min.js'></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='js/wow.min.js'></script>
+  
+</html>

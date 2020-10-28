@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- PER-PAGE META -------------------------------------------------- -->
+    <meta charset='utf-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link href='images/favicon.ico' rel='icon' type='image/png'>
+    <title>Terrapattern</title>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <meta content='' name='author'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    
+    <!-- CSS ------------------------------------------------------------ -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='css/animate.css' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet'>
+    <link href='css/responsive.css' rel='stylesheet'>
+    
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-78282433-1', 'auto', {'allowLinker': true});
+      ga('require', 'autotrack');
+      ga('require', 'linker');
+      ga('linker:autoLink', ['www.terrapattern.com', 'pgh.terrapattern.com' ,'sf.terrapattern.com' ,'nyc.terrapattern.com' ,'detroit.terrapattern.com' ,'berlin.terrapattern.com' ,'miami.terrapattern.com' ,'austin.terrapattern.com'] );
+      ga('send', 'pageview');
+    </script>
+    <!-- 
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/0.6.5/autotrack.js'></script>
+    --> 
+  </head>
+  <body></body>
+  <header class='animated-header pages-header' id='top-bar'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <div class='navbar-brand'>
+          <a href='index.html'>
+            <img alt='' src='images/terrapattern_logo_white.png'>
+          </a>
+          <em>_alpha</em>
+        </div>
+      </div>
+      <nav class='navbar collapse navbar-collapse navbar-right' role='navigation'>
+        <div class='main-menu'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='dropdown'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                Search a City
+                <span class='caret'></span>
+              </a>
+              <div class='dropdown-menu'>
+                <ul>
+                  <li>
+                    <a href='index-pgh.html'>Pittsburgh</a>
+                  </li>
+                  <li>
+                    <a href='index-sf.html'>San Francisco</a>
+                  </li>
+                  <li>
+                    <a href='index-nyc.html'>New York City</a>
+                  </li>
+                  <li>
+                    <a href='index-detroit.html'>Detroit</a>
+                  </li>
+                  <li>
+                    <a href='index-berlin.html'>Berlin</a>
+                  </li>
+                  <li>
+                    <a href='index-miami.html'>Miami</a>
+                  </li>
+                  <li>
+                    <a href='index-austin.html'>Austin</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href='about.html'>About</a>
+            </li>
+            <li>
+              <a href='team.html'>Team</a>
+            </li>
+            <li>
+              <a href='faq.html'>FAQ</a>
+            </li>
+            <li>
+              <a href='references.html'>References</a>
+            </li>
+            <li>
+              <a href='press.html'>Press</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class='global-page-header'>
+    <div class='container header-content'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='block'>
+            <h1>About Terrapattern</h1>
+            <div class='col-md-8 header-description'>
+              <p class='prose'>A Prototype for Visual Query-by-Example in Satellite Imagery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='about'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2 id="overview">Overview</h2>
+          
+          <p><strong>We present the alpha version of <em>Terrapattern</em>: &quot;similar-image search&quot; for satellite photos.</strong> It&#39;s an open-source tool for discovering &quot;patterns of interest&quot; in unlabeled satellite imagery&mdash;a prototype for exploring the unmapped, and the unmappable. </p>
+          
+          <p>Terrapattern provides an open-ended interface for visual query-by-example. Simply click an interesting spot on Terrapattern&#39;s map, and it will find other locations that look similar. Our tool is ideal for locating specialized &#39;nonbuilding structures&#39; and other forms of soft infrastructure that aren&#39;t usually indicated on maps.</p>
+          
+          <p>There has never been a more exciting time to observe human activity and understand the patterns of humanity’s impact on the world. We aim to help people discover such patterns in satellite imagery, with the help of deep learning machine vision techniques. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='about about-grey about-examples'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2 id="examples">Examples</h2>
+          
+          <p>Terrapattern is ideal for discovering, locating and labeling typologies that aren&#39;t customarily indicated on maps. These might include ephemeral or temporally-contingent features (such as vehicles or construction sites), or the sorts of banal infrastructure (like fracking wells or smokestacks) that only appear on specialist blueprints, if they appear at all. </p>
+          
+          <p>In this section, we share some discoveries of our own, made with the Terrapattern system. It is important to point out that the Terrapattern system   was not <em>trained</em> on any of the categories shown below, but instead recognizes them because of their common visual features. </p>
+          
+          <p>Here, for example, are <a href="http://pgh.terrapattern.com/?lat=40.5261395&amp;lng=-79.8810095">golf course sand traps</a> identified by our system in the Pittsburgh metro region:<br>
+          <a href="http://pgh.terrapattern.com/?lat=40.5261395&amp;lng=-79.8810095"><img src="images/demo_golf_course_sand_traps.jpg" alt="Golf course sand traps in Allegheny county, identified by Terrapattern" title="Golf course sand traps, identified by Terrapattern"></a></p>
+          
+          <p>Here, Terrapattern identified some of Pittsburgh&#39;s finest <a href="http://pgh.terrapattern.com/?lat=40.461872&amp;lng=-79.77872100000002">school bus depots</a>:
+          <a href="http://pgh.terrapattern.com/?lat=40.461872&amp;lng=-79.77872100000002"><img src="images/demo_school_bus_depots.jpg" alt="School bus depots in Allegheny county, identified by Terrapattern" title="School bus depots in Allegheny county, identified by Terrapattern"></a></p>
+          
+          <p>...<a href="http://sf.terrapattern.com/?lat=37.7791702&amp;lng=-122.45761950000002">purple tennis courts</a> in the Bay Area,
+          <a href="http://sf.terrapattern.com/?lat=37.7791702&amp;lng=-122.45761950000002"><img src="images/demo_tennis_courts.jpg" alt="Purple tennis courts in the San Francisco metro region, identified by Terrapattern" title="Purple tennis courts in the San Francisco metro region, identified by Terrapattern"></a></p>
+          
+          <p>...certain attractive <a href="http://nyc.terrapattern.com/?lat=40.6979118&amp;lng=-74.16212689999998">runway markings</a> from various New York ariports,
+          <a href="http://nyc.terrapattern.com/?lat=40.6979118&amp;lng=-74.16212689999998"><img src="images/demo_airport_runway_lines.jpg" alt="Runway lines from various New York ariports, identified by Terrapattern" title="Runway lines from various New York ariports, identified by Terrapattern"></a></p>
+          
+          <p>...and a collection of <a href="http://nyc.terrapattern.com/?lat=40.5578818&amp;lng=-74.21498739999998">nautical wrecks</a> in NYC-area coastal waters:
+          <a href="http://nyc.terrapattern.com/?lat=40.5578818&amp;lng=-74.21498739999998"><img src="images/demo_nautical_wrecks.jpg" alt="Nautical wrecks in the NYC area, identified by Terrapattern" title="Nautical wrecks in the NYC area, identified by Terrapattern"></a></p>
+          
+          <p>Here are some more example searches you can try: <a href="http://pgh.terrapattern.com/?lat=40.355282&amp;lng=-80.14462550000002">baseball diamonds</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.4582145&amp;lng=-80.1116735">semi-trailer trucks on highways</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.4926995&amp;lng=-80.21327550000001">USAF bombers</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.499492&amp;lng=-80.23593">cracked tarmac</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.4874745&amp;lng=-79.905037">bridges</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.292582&amp;lng=-79.94142149999999">fracking wells</a> &bull; 
+          <a href="http://pgh.terrapattern.com/?lat=40.5721195&amp;lng=-79.94004849999999">swimming pools in the woods</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.656242&amp;lng=-79.75606649999997">Christmas tree farms</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.468142&amp;lng=-80.13158199999998">tennis courts</a> &bull; <a href="http://detroit.terrapattern.com/?lat=42.2883572&amp;lng=-83.12566930000003">wastewater treatment pans</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.443062&amp;lng=-79.94004849999999">football stadium logos</a> &bull; <a href="http://nyc.terrapattern.com/?lat=40.7867368&amp;lng=-73.80995239999999">overpasses</a> &bull; <a href="http://nyc.terrapattern.com/?lat=40.7161993&amp;lng=-74.1477104">solar panels</a> &bull; <a href="http://detroit.terrapattern.com/?lat=42.3902447&amp;lng=-83.18058930000001">scrap yards</a> &bull; <a href="http://pgh.terrapattern.com/?lat=40.465007&amp;lng=-80.0471425">transformer stations</a>...</p>
+          <a class='btn btn-default btn-contact twitter-button link' href='https://twitter.com/hashtag/terrapattern' id='export'>
+            Have you discovered an interesting collection? Please send a tweet with the hashtag
+            <span class='twitter-link'>#terrapattern</span>
+            and the URL of your search! &#10132;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='about about-blue'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2 id="motivation-and-intended-use">Motivation and Intended Use</h2>
+          
+          <p>It has been predicted that, within the next three years, access to daily-updated, whole-earth satellite imagery with sub-meter resolution will become widely available online. There will be many important stories about natural and human activities latent in this data. Without special effort, however, it is doubtful that this imagery will have annotation layers that make such stories discoverable.</p>
+          
+          <p>In light of this, the <em>Terrapattern</em> prototype is intended to demonstrate a workflow by which users&mdash;such as journalists, citizen scientists, humanitarian agencies, social justice activists, archaeologists, urban planners, and other researchers&mdash;can easily search for visually consistent &quot;patterns of interest&quot;. We are particularly keen to help people identify, characterize and track indicators which have not been detected or measured previously, and which have sociological, humanitarian, scientific, or cultural significance. </p>
+          
+          <p>Our goal is to provide a geospatial software tool that makes it easy for everyday people, who may lack expertise in machine vision, to specify the <em>thing</em> that they are interested in; to automatically find more examples of that <em>thing</em>; and to provide the locations of those instances in a common data format that easily allows for further examination. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='about'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2 id="about-our-prototype">About our Prototype</h2>
+          
+          <p><em>Terrapattern</em> is a &quot;panoptic perceptron&quot; that allows a user to perform arbitrary <em>queries-by-example</em> in satellite imagery. A guest clicks on a &quot;feature of interest&quot; in a satellite image; the <em>Terrapattern</em> system presents a batch of the most similar-looking places nearby; and the guest can then download a list of these locations in GeoJSON format.</p>
+          
+          <p>For our purposes, &quot;interesting&quot; features are anthropogenic or natural phenomena that are not only socially or scientifically meaningful, but also <em>visually distinctive</em>&mdash;thus lending themselves ideally to machine recognition. Examples could include things like animal herds, methane blowholes, factories, destroyed homes, or logging roads. Many other patterns await discovery.</p>
+          
+          <p>We aim to test the assumptions: </p>
+          
+          <ul>
+          <li>That there are <em>undiscovered patterns of activity</em> that are only visible from the vantage point of satellite imagery; </li>
+          <li>That these patterns can <em>offer insight</em> into trends, stories and phenomena of social, economic, ecological, anthropological, humanitarian, scientific, artistic or other cultural interest;</li>
+          <li>That there exists a subset of such patterns in satellite imagery which, because of their repetition and visual consistency, lend themselves particularly well to automated detection and analysis by means of computer vision and machine learning; </li>
+          <li>That there is (or would be) demand for information about these patterns among domain experts, as well as among journalists, citizen scientists, and others in the Fourth Estate;</li>
+          <li>And that it is possible to create software tools which make such workflows easy and reliable, for researchers whose teams might otherwise lack expertise in computer vision and machine learning. </li>
+          </ul>
+          
+          <p>We emphasize that <em>Terrapattern</em> is a limited <strong>prototype</strong>. As of May 2016, it allows users to search in the greater metropolitan regions of three American cities: New York City, San Francisco, and Pittsburgh (Allegheny County). Altogether more than 2,200 square miles (5700 km&sup2;) are fully searchable. Allowing high-resolution searches in an area the size of the United States (e.g. ~3.8M mi&sup2; or 9.9M km&sup2;) is technically and financially beyond the scope of our project at the current time. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='about about-grey about-inspirations'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2 id="inspirations">Inspirations</h2>
+          
+          <p>The Terrapattern project seeks to democratize geospatial intelligence. By providing a means by which researchers, journalists, citizen scientists, and artists can quickly and easily scan extremely large geographical areas for specific visual features, our hope is that the public at large will gain the ability to research and answer questions about our world that are otherwise unknowable. </p>
+          
+          <p>Access to satellite imagery, especially as it can be interpreted through the lens of machine intelligence, is currently controlled by a select few: state-level actors and (increasingly) multinational businesses. Once the exclusive domain of top-secret military surveillance, high-resolution satellite imagery has recently become heavily corporatized. At the forefront of this shift are companies like <a href="https://orbitalinsight.com/">Orbital Insight</a>, <a href="https://www.rsmetrics.com/">Remote Sensing Metrics</a> and <a href="http://www.genscape.com/">Genscape</a>, which apply machine learning algorithms to satellite imagery in order to sell &quot;actionable intelligence&quot; to hedge funds and other market speculators. For example, in their &quot;<a href="https://orbitalinsight.com/solutions/us-retail-traffic-indices/">US Retail Traffic Index</a>&quot;, RS Metrics monitors the number of cars in retail parking lots, in order to estimate the quarterly performance of big-box stores before those results have been released. Similarly, Orbital Insight&#39;s &quot;<a href="https://orbitalinsight.com/solutions/world-oil-storage-index/">World Oil Storage Index</a>&quot; consists of daily estimates of the amount of oil held in 20,000 storage tanks&mdash;intelligence derived from the size of shadows on the interiors of tanks with floating lids. With enormous amounts of money to be made in the trade of such information products, this type of understanding about the forces shaping our world remains very far from being a public good.</p>
+          
+          <div class="container about-images">
+              <div class="row">
+                  <div class="col-md-5 col-md-offset-1">
+                      <img class="img-responsive" src="images/16x9_parking_lots_astrium.jpg" alt=" Image credit: RS Metrics & Astrium"/>
+                  </div>
+                  <div class="col-md-5">
+                      <img class="img-responsive" src="images/16x9_oil_tanks_orbital_insight.jpg" alt="Orbital Insight, Inc. measures the shadows on oil tanks with floating lids to estimate the size of a region's oil reserves. They then sell this information to hedge funds and other market speculators. Image credit: Orbital Insight." />
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+              </div>
+          </div>
+          
+          <p>We wondered what it would be like to provide an <strong>&quot;Orbital Insight for the rest of humanity&quot;</strong>: a tool that could help those who are concerned about or interested in the world&mdash;whether through environmental studies, journalism, humanitarian efforts, social sciences, natural sciences, or artistic inquiry&mdash;obtain geospatial understanding of the kind only previously available to a select few. In this section, we highlight a few projects by others which we consider powerfully inspirational illustrations of this: the democratization of machine intelligence for satellite imagery.</p>
+          
+          <p>At the forefront of environmental efforts is the non-profit organization, <a href="http://maaproject.org/en/">Monitoring of the Andean Amazon Project</a> (MAAP), which uses satellite imagery and computer vision to analyze the Amazonian rainforest. In some of their best-known work, supported through the <a href="https://www.planet.com/impact/">Planet Labs Ambassadors Program</a>, MAAP has successfully detected <a href="http://maaproject.org/2016/invasion-tambopata-3/">illegal gold mines</a>, as well as <a href="http://maaproject.org/2015/maap18-logroads/">illegal logging roads</a>, which are key precursors to deforestation. Other environmental initiatives have used related techniques to, for example, bust <a href="http://news.nationalgeographic.com/2015/06/150615-skytruth-pirate-fishing-illegal-big-data-ocean-conservation/">illegal fishing operations</a>.</p>
+          
+          <div class="container about-images">
+              <div class="row">
+                  <div class="col-md-5 col-md-offset-1">
+                      <img class="img-responsive" src="images/16x9_illegal_gold_mine_aca.jpg" alt="Illegal gold mines are monitored in the Peruvian rainforest. Image credit: Monitoring of the Andean Amazon Project."/>
+                  </div>
+                  <div class="col-md-5">
+                      <img class="img-responsive" src="images/16x9_illegal_logging_roads_maap.jpg" alt="Aerial view of illegal logging roads in the Amazon rainforest. Image credit: Monitoring of the Andean Amazon Project." />
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+              </div>
+          </div>
+          
+          <p>At the Harvard Humanitarian Initative&#39;s &quot;Signal Program on Human Security and Technology&quot;, a series of influential projects directed by <a href="https://en.wikipedia.org/wiki/Nathaniel_Raymond">Nathaniel Raymond</a> has used satellite imaging to investigate war crimes, genocides, and other atrocities. Raymond is among the most outspoken advocates for the use of geospatial intelligence by human rights groups and other non-governmental organizations (NGOs). In one project, Raymond and his team used machine learning techniques to <a href="http://hhi.harvard.edu/sites/default/files/publications/siig_ii_burned_tukuls_3.pdf">automatically identify Sudanese straw-hut dwellings</a>, known as <em>tukuls</em>, in satellite imagery. Their team&#39;s tukul-detector was able to successfully distinguish intact tukuls from ones which had been razed&mdash;an excellent proxy for detecting mass killings, in a part of the world where on-the-ground journalism is exceptionally risky.</p>
+          
+          <p>In <a href="http://krvarshney.github.io/pubs/AbelsonVS_kdd2014.pdf">another humanitarian project</a>, data scientists from DataKind.org collaborated with members of GiveDirectly, an NGO which gives microgrants to impoverished people in developing nations. In order to know where to focus their efforts, the team developed software to analyze the ratio of straw roofs to metal roofs in each of the districts of a Central African country. This ratio proved to be a good proxy for estimating the relative wealth of each of the districts, for a country otherwise lacking in census data of this sort. </p>
+          
+          <div class="container about-images">
+              <div class="row">
+                  <div class="col-md-5 col-md-offset-1">
+                      <img class="img-responsive" src="images/16x9_tukul_detector_hhi.jpg" alt="Researchers can detect mass atrocities by identifying domestic dwellings, known as 'tukuls', that have been razed in South Sudan. Image credit: The Signal Program on Human Security and Technology at the Harvard Humanitarian Initiative." />
+                  </div>
+                  <div class="col-md-5">
+                      <img class="img-responsive" src="images/16x9_datakind.jpg" alt="Researcherss measure the ratio of metal to straw roofs as a proxy to understand the economic output of a given region." />
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+              </div>
+          </div>
+          
+          <p>The combination of satellite imaging and machine vision has also had a major impact on our ability to track animal populations. For example, one team of scientists were able to track Antarctic penguin populations&mdash;and take measurements of their diets&mdash;by <a href="http://www.bbc.com/earth/story/20141210-surprising-use-of-penguin-poo">observing their poo from space</a>. Another team of scientists was able to <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088655">locate and count families of Southern Right Whales</a>. </p>
+          
+          <div class="container about-images">
+              <div class="row">
+                  <div class="col-md-5 col-md-offset-1">
+          <img class="img-responsive" src="images/16x9_penguin_poop_digitalglobe.jpg" alt="Satellite views of penguin poop can help track wildlife populations and their diet. Image credit: DigitalGlobe/BAS." />
+                  </div>
+                  <div class="col-md-5">
+          <img class="img-responsive" src="images/16x9_right_whales_fretwell.jpg" "Processed satellite images of southern right whales. Image credit: Peter Fretwell et al." />
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+              </div>
+          </div>
+          
+          <p>The telescopic perspective of satellite imagery has enormous potential to provide <em>scientific</em> insights that could not be obtained otherwise.  For example, &quot;space archaeologist&quot; <a href="http://www.wired.co.uk/magazine/archive/2014/12/start/scanning-the-past">Dr. Sarah Parcak</a>, a professor at the University of Alabama at Birmingham, has used remote sensing technologies, image processing and computer vision in order to discover ancient Egyptian pyramids and even a previously unknown site of Viking activity in North America. In another fascinating discovery, Dr. Sabine Begall, a professor of Zoology at the University of Duisburg-Essen, has discovered that ruminants have a previously undiscovered geomagnetic sense&mdash;essentially, that <a href="http://www.pnas.org/content/early/2008/08/22/0803650105">grazing cows align themselves with the earth&#39;s magnetic field</a>. </p>
+          
+          <div class="container about-images">
+              <div class="row">
+                  <div class="col-md-5 col-md-offset-1">
+          <img class="img-responsive" src="images/16x9_parcak_space_archaeology_nasa.jpg" alt="'Space archaeologist' Sarah Parcak has discovered ancient Egyptian pyramids using satellite imagery and computer vision. Image credit: NASA" />
+                  </div>
+                  <div class="col-md-5">
+          <img class="img-responsive" src="images/16x9_magnetic_deer_alignment_begall.png" alt="Examinations of cattle and deer from satellite images reveal that they align their body axes along the earth's magnetic field. Image credit: Begall et al." />
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+              </div>
+          </div>
+          
+          <p>The arts have the power to provide insights of an altogether different sort.  A number of artists have employed various forms of human and/or machine intelligence to the domain of satellite imagery, in order to produce projects that inform, provoke, entertain, and delight. An excellent example of this is the project &quot;<a href="http://type.aerial-bold.com/tw/"><em>Aerial Bold</em></a>&quot; by Benedikt Gro&#223; and Joseph Lee, which is a typeface wholly constructed from letterforms found in satellite imagery. Whereas Gro&#223; and Lee use a mixture of crowdsourcing and automated detection, artist Jenny Odell uses a more personalized, curatorial approach in her <a href="http://www.jennyodell.com/satellite.html"><em>Satellite Collections</em></a> project (2009-2011), in which parking lots, silos, landfills, waste ponds are compiled into typological collages. Of her work, Odell writes that &quot;<em>The view from a satellite is not a human one, nor is it one we were ever really meant to see. But it is precisely from this inhuman point of view that we are able to read our own humanity, in all of its tiny, repetitive marks upon the face of the earth. From this view, the lines that make up basketball courts and the scattered blue rectangles of swimming pools become like hieroglyphs that say: people were here.</em>&quot;</p>
+          
+          <p>Other interesting artworks in this space include <a href="http://benedikt-gross.de/log/2013/06/the-big-atlas-of-la-pools/"><em>The Big Atlas of LA Pools</em></a> (also by Gro&#223; &amp; Lee), Onformative Design&#39;s <a href="http://onformative.com/work/google-faces?p=lab/googlefaces/"><em>Google Faces</em></a>, and Joshua Begley&#39;s stunning <a href="http://prisonmap.com"><em>Prison Map</em></a>.</p>
+          
+          <div class="container about-images">
+              <div class="row">
+                  <div class="col-md-5 col-md-offset-1">
+          <img class="img-responsive" src="images/16x9_aerial_bold_benedikt_gross.jpg" alt="Aerial Bold is a typeface made from letterforms found in satellite images. Image credit: Benedikt Gross and Joey Lee" />
+                  </div>
+                  <div class="col-md-5">
+          <img class="img-responsive" src="images/16x9_odell_container_ships.jpg" alt="Collections of container ships extracted from satellite imagery by artist Jenny Odell. Image credit: Jenny Odell" />
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+              </div>
+          </div>
+          
+          <p>In many of the examples discussed above, researchers developed bespoke visual detectors that were tightly tuned and customized for specific problems. The techniques used in Terrapattern portend a new form of highly generalized detector which can be used in searches by relative laypersons. In this new workflow, it is only important that the patterns of interest are visually consistent enough for algorithmic detection and analysis.</p>
+          
+          <p>There are a number of burgeoning, visually consistent, and in many cases worrisome phenomena which future versions of Terrapattern could be useful in tracking. These include <a href="http://www.wired.com/2013/09/mishka-henner-factory-farms/">Concentrated Animal Feeding Operations</a>, or CAFOs; <a href="http://clui.org/ludb/site/ambrosia-lake-uranium-tailings-pile">uranium mill tailings deposits</a>; &quot;<a href="http://pruned.blogspot.com/2011/04/atomic-gardens.html">Gamma Gardens</a>&quot; (also called radiation farms) for mutation breeding; <a href="http://news.nationalgeographic.com/news/2015/02/150227-siberia-mystery-holes-craters-pingos-methane-hydrates-science/">Siberian methane blowholes</a>, which are arising due to global warming; and <a href="http://news.nationalgeographic.com/news/2014/08/140818-elephants-africa-poaching-cites-census/">megafauna poaching</a>. The Terrapattern project is only a prototype&mdash;especially in its scale&mdash;and we feel we have only scratched the surface of what is possible. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='about'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2 id="how-it-works">How it Works</h2>
+          
+          <p>Terrapattern uses a deep convolutional neural network (DCNN), based on the <a href="http://arxiv.org/abs/1512.03385">ResNet</a> (&quot;Residual Network&quot;) architecture developed by Kaiming He et al. We trained a 34-layer DCNN using hundreds of thousands of satellite images labeled in <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, teaching the neural network to predict the category of a place from a satellite photo. In the process, our network learned which high-level visual features (and combinations of those features) are important for the classification of satellite imagery.</p>
+          
+          <p>It has been <a href="http://www.spacemachine.net/views/2016/3/datasets-over-algorithms">pointed out</a> that many machine-learning breakthroughs are constrained, not by the limitations of algorithms, but by the availability of high-quality training datasets. The Terrapattern project illustrates this situation well. When we began the project, we expected that we could find a pre-existing DCNN model for satellite imagery, such as those hosted at the <a href="http://caffe.berkeleyvision.org/model_zoo.html">Caffe Model Zoo</a>. We settled in for a much longer haul when we realized we would have to train our own. To that end, Terrapattern was only possible due to the astonishing crowdsourced mapping effort of the OpenStreetMap project, which has generously categorized large parts of the world with its <a href="http://wiki.openstreetmap.org/wiki/Nominatim/Special_Phrases/EN">Nominatim</a> taxonomy. We trained our DCNN using 466 of the Nominatim categories (such as &quot;airport&quot;, &quot;marsh&quot;, &quot;gas station&quot;, &quot;prison&quot;, &quot;monument&quot;, &quot;church&quot;, etc.), with approximately 1000 satellite images per category. Our resulting model, which took 5 days to compute on an nVidia 980 GPU, has a top-5 error rate of 25.4%.</p>
+          
+          <p>After training the model, we removed the final classification layer of the network and extracted the next-to-last layer of the DCNN. Using this layer of proto-features (a technique called &quot;<a href="https://www.tensorflow.org/versions/r0.8/tutorials/image_recognition/index.html">transfer learning</a>&quot;), we computed descriptions for millions more satellite photos that cover the metropolitan regions of New York, San Francisco, and Pittsburgh. When we want to discover places that look similar to your query, we just have to find places whose descriptions are similar to those of the tile you selected. To perform this search in near real time, we use the <a href="https://github.com/manzilzaheer/CoverTree">SG Trees algorithm</a> for <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">K-Nearest Neighbors</a>.</p>
+          
+          <p>The Terrapattern search tool features three visualizations: a slippy map, for specifying visual queries; an &quot;Geographical Plot&quot; (or minmap), which shows the locations of search responses in the surrounding metro region; and a &quot;Similarity Plot&quot;, which organizes the returned results within an abstract 2D space using <a href="https://en.wikipedia.org/wiki/Principal_component_analysis">Principal Component Analysis</a>, or PCA. The Terrapattern website is built using Ruby and JavaScript, with satellite imagery from Google Maps, while the Geographical PLot and Similarity Plot were created in JavaScript using <a href="http://p5js.org/">p5.js</a>.</p>
+          
+          <p>For more technical information on Terrapattern, including our open-source code, models and datasets, please see this <a href="references.html#technical-bibliography">list of technical references</a> and <a href="http://github.com/CreativeInquiry/terrapattern">our Github repository</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='final-section' id='call-to-action'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+          <p><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type"><strong>Terrapattern</strong></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="terrapattern.com" property="cc:attributionName" rel="cc:attributionURL">Golan Levin, David Newbury, Kyle McDonald et al.</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. The Terrapattern <a href="http://github.com/CreativeInquiry/terrapattern" target="_blank">code and associated datasets</a> are available under <a href="https://opensource.org/licenses/MIT" target="_blank">the MIT License</a>. Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="terrapattern.com" rel="cc:morePermissions">terrapattern.com</a>. The map data used in this project is &#169;2015 Google and its data providers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id='footer'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-5'>
+          <h4 id="terrapattern">Terrapattern</h4>
+          
+          <p>Enabling citizen scientists, journalists, and other researchers to detect “patterns of interest” in satellite imagery through an open-source search tool.</p>
+          
+          <p>Developed at the <a href="http://studioforcreativeinquiry.org/">Frank-Ratchye STUDIO for Creative Inquiry</a> at Carnegie Mellon University with support from the <a href="http://knightfoundation.org/grants/201551228/">John S. and James L. Knight Foundation</a> <a href="http://www.knightfoundation.org/funding-initiatives/knight-prototype-fund/">Prototype Fund</a>.</p>
+          <a href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license'>
+            <img alt='Creative Commons License' src='images/cc_by_sa.svg' style='border-width:0'>
+          </a>
+        </div>
+        <div class='col-md-2 col-md-offset-2 reference_links hidden-sm hidden-xs'>
+          <h4 id="links">Links</h4>
+          
+          <ul>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern">Terrapattern Github</a></li>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern-website">Terrapattern Site Github</a></li>
+          <li><a href="https://twitter.com/hashtag/terrapattern">#Terrapattern Tweets</a></li>
+          <li><a href="http://goo.gl/forms/8T7zY28nHm">Visitor Survey</a></li>
+          </ul>
+        </div>
+        <div class='col-md-2 col-md-offset-1 contributors'>
+          <div class='row'>
+            <div class='col-md-12 hidden-sm hidden-xs'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JAVASCRIPTS ------------------------------------------------------- -->
+  <!-- Latest compiled and minified JavaScript -->
+
+  <!-- 
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src='js/wow.min.js'></script>
+  --> 
+
+  <script src='js/jquery-1.12.4.min.js'></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='js/wow.min.js'></script>
+  
+</html>

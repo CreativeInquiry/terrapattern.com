@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- PER-PAGE META -------------------------------------------------- -->
+    <meta charset='utf-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link href='images/favicon.ico' rel='icon' type='image/png'>
+    <title>Terrapattern</title>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <meta content='' name='author'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    
+    <!-- CSS ------------------------------------------------------------ -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='css/animate.css' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet'>
+    <link href='css/responsive.css' rel='stylesheet'>
+    <link href='css/interface.css' rel='stylesheet'>
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-78282433-1', 'auto', {'allowLinker': true});
+      ga('require', 'autotrack');
+      ga('require', 'linker');
+      ga('linker:autoLink', ['www.terrapattern.com', 'pgh.terrapattern.com' ,'sf.terrapattern.com' ,'nyc.terrapattern.com' ,'detroit.terrapattern.com' ,'berlin.terrapattern.com' ,'miami.terrapattern.com' ,'austin.terrapattern.com'] );
+      ga('send', 'pageview');
+    </script>
+    <!--
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/0.6.5/autotrack.js'></script>
+    -->
+  </head>
+  <body></body>
+  <header class='animated-header pages-header' id='top-bar'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <div class='navbar-brand'>
+          <a href='index.html'>
+            <img alt='' src='images/terrapattern_logo_white.png'>
+          </a>
+          <em>_alpha</em>
+        </div>
+      </div>
+      <nav class='navbar collapse navbar-collapse navbar-right' role='navigation'>
+        <div class='main-menu'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='dropdown'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                Search a City
+                <span class='caret'></span>
+              </a>
+              <div class='dropdown-menu'>
+                <ul>
+                  <li>
+                    <a href='index-pgh.html'>Pittsburgh</a>
+                  </li>
+                  <li>
+                    <a href='index-sf.html'>San Francisco</a>
+                  </li>
+                  <li>
+                    <a href='index-nyc.html'>New York City</a>
+                  </li>
+                  <li>
+                    <a href='index-detroit.html'>Detroit</a>
+                  </li>
+                  <li>
+                    <a href='index-berlin.html'>Berlin</a>
+                  </li>
+                  <li>
+                    <a href='index-miami.html'>Miami</a>
+                  </li>
+                  <li>
+                    <a href='index-austin.html'>Austin</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href='about.html'>About</a>
+            </li>
+            <li>
+              <a href='team.html'>Team</a>
+            </li>
+            <li>
+              <a href='faq.html'>FAQ</a>
+            </li>
+            <li>
+              <a href='references.html'>References</a>
+            </li>
+            <li>
+              <a href='press.html'>Press</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class='global-page-header'>
+    <div class='container header-content'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <div class='block'>
+            <h1>Berlin</h1>
+            <div class='col-md-8 header-description'>
+              <p class='prose'><p>Click on a place in the map to find similar places in Berlin</p></p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 visible-md-block visible-lg-block'>
+          <div class='block wow fadeInUp' data-wow-delay='.3s'>
+            <img alt='' height='100%' src='images/worldmap.svg' width='100%'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='visible-xs-block' id='small-screen-warning'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-xs-12'>
+          <p>During this alpha phase, Terrapattern may not fully support mobile devices.</p>
+          <p>Please revisit the site on a desktop machine for the full experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='pages service-page' id='service-page'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-7'>
+          <p>Click on a feature of interest in the map of Berlin below. Terrapattern will find map tiles in the region that look the most similar to the place you selected.  For example, try clicking on <a href='index-lat=52.5007393&amp;lng=13.264763700000003.html'>these football fields</a>.</p>
+        </div>
+        <div class='col-md-5'>
+          <p>Below are the top results returned from your search, displayed in a geographic overview, a set of thumbnail images, and a plot of their relative similarity. Download your results as GeoJSON below.</p>
+        </div>
+      </div>
+      <div class='row' id='map_interface'>
+        <div class='overlay' id='searching'>
+          <h4>Searching the Berlin metro region...</h4>
+        </div>
+        <div class='col-md-7'>
+          <div class='block'>
+            <div class='row'>
+              <div class='col-md-12'>
+                <input class='controls' id='search_box' placeholder='Search for a location in the Berlin metro region' type='text'>
+                <div id='main-map'>
+                  <div id='map'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-5'>
+          <div class='block' id='interface_parts'>
+            <div class='row'>
+              <div class='col-xs-6'>
+                <h4>Geographical Plot</h4>
+              </div>
+              <div class='col-xs-6'>
+                <h4>Similarity Plot</h4>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <div id='mini_displays'></div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <h4>Search Results</h4>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <div id='results_grid'></div>
+                <div id='results_pagination'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='final-section' id='call-to-action'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='block'>
+            <h3 class='wow fadeInDown export' data-wow-delay='.3s' data-wow-duration='500ms'>Export your results as GeoJSON</h3>
+            <a class='btn btn-default btn-contact export-button wow fadeInDown' data-wow-delay='.7s' data-wow-duration='500ms' href='#' id='export'>Export &#10132;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id='footer'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-5'>
+          <h4 id="terrapattern">Terrapattern</h4>
+          
+          <p>Enabling citizen scientists, journalists, and other researchers to detect “patterns of interest” in satellite imagery through an open-source search tool.</p>
+          
+          <p>Developed at the <a href="http://studioforcreativeinquiry.org/">Frank-Ratchye STUDIO for Creative Inquiry</a> at Carnegie Mellon University with support from the <a href="http://knightfoundation.org/grants/201551228/">John S. and James L. Knight Foundation</a> <a href="http://www.knightfoundation.org/funding-initiatives/knight-prototype-fund/">Prototype Fund</a>.</p>
+          <a href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license'>
+            <img alt='Creative Commons License' src='images/cc_by_sa.svg' style='border-width:0'>
+          </a>
+        </div>
+        <div class='col-md-2 col-md-offset-2 reference_links hidden-sm hidden-xs'>
+          <h4 id="links">Links</h4>
+          
+          <ul>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern">Terrapattern Github</a></li>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern-website">Terrapattern Site Github</a></li>
+          <li><a href="https://twitter.com/hashtag/terrapattern">#Terrapattern Tweets</a></li>
+          <li><a href="http://goo.gl/forms/8T7zY28nHm">Visitor Survey</a></li>
+          </ul>
+        </div>
+        <div class='col-md-2 col-md-offset-1 contributors'>
+          <div class='row'>
+            <div class='col-md-12 hidden-sm hidden-xs'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JAVASCRIPTS ------------------------------------------------------- -->
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src='js/wow.min.js'></script>
+  <script>
+    var MAPS_API_KEY = "AIzaSyB4GJy_yD262ihGs4chc2UIhUJxOkQmIE0";
+    var BOUNDING_BOX = {"sw_lat":52.338662,"sw_lng":13.089021,"ne_lat":52.670462,"ne_lng":13.759133};
+    var MAP_CENTER   = {"lng":13.40952,"lat":52.52082};
+    var BOUNDARY     = {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Berlin"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 13.6108275, 52.54423549999984 ],
+        [ 13.65689549999979, 52.52986949999985 ],
+        [ 13.65857249999979, 52.52581099999983 ],
+        [ 13.63669149999978, 52.51469949999984 ],
+        [ 13.63331899999977, 52.51182599999984 ],
+        [ 13.61639749999978, 52.47489349999983 ],
+        [ 13.61151749999979, 52.47062749999984 ],
+        [ 13.64061299999977, 52.47948449999984 ],
+        [ 13.64821499999979, 52.47878199999985 ],
+        [ 13.6984324999998, 52.45507999999984 ],
+        [ 13.7044434999998, 52.45426449999985 ],
+        [ 13.69919099999979, 52.46820199999985 ],
+        [ 13.7013239999998, 52.46814549999985 ],
+        [ 13.75766349999978, 52.43879049999984 ],
+        [ 13.7604695, 52.43848049999983 ],
+        [ 13.74311799999978, 52.43399849999982 ],
+        [ 13.73795849999979, 52.43413799999984 ],
+        [ 13.73516599999979, 52.40600099999983 ],
+        [ 13.73453749999979, 52.40197599999985 ],
+        [ 13.68827549999978, 52.38592049999983 ],
+        [ 13.68756199999979, 52.38582349999984 ],
+        [ 13.70050749999979, 52.37795249999985 ],
+        [ 13.6999974999998, 52.37512149999984 ],
+        [ 13.67746799999978, 52.36872549999984 ],
+        [ 13.67108049999979, 52.36635549999983 ],
+        [ 13.65172299999977, 52.33945749999983 ],
+        [ 13.64840049999978, 52.33824199999984 ],
+        [ 13.63795149999979, 52.34382049999985 ],
+        [ 13.63629099999977, 52.34703799999983 ],
+        [ 13.64222899999979, 52.37478349999984 ],
+        [ 13.64336449999979, 52.37739099999985 ],
+        [ 13.62795, 52.38179049999985 ],
+        [ 13.60695899999979, 52.37498149999984 ],
+        [ 13.5939419999998, 52.39250099999984 ],
+        [ 13.59276199999979, 52.39416949999983 ],
+        [ 13.48665999999977, 52.39743049999984 ],
+        [ 13.4798849999998, 52.39599649999985 ],
+        [ 13.46833749999979, 52.41943199999983 ],
+        [ 13.46232149999977, 52.42062449999983 ],
+        [ 13.43177999999978, 52.41257999999985 ],
+        [ 13.41877249999979, 52.40991749999984 ],
+        [ 13.42743149999978, 52.38581949999985 ],
+        [ 13.42098499999977, 52.37624699999984 ],
+        [ 13.3885209999998, 52.37796849999984 ],
+        [ 13.34302849999977, 52.40767399999984 ],
+        [ 13.34324849999979, 52.41161999999982 ],
+        [ 13.31211999999979, 52.39959949999985 ],
+        [ 13.29678249999978, 52.41581499999983 ],
+        [ 13.29612999999978, 52.41645149999985 ],
+        [ 13.25319599999977, 52.40612099999984 ],
+        [ 13.2498439999998, 52.40496499999983 ],
+        [ 13.24891699999978, 52.41194249999983 ],
+        [ 13.24579749999978, 52.42080099999983 ],
+        [ 13.22534449999978, 52.42013399999985 ],
+        [ 13.22228799999979, 52.42035649999982 ],
+        [ 13.13415949999978, 52.38861299999985 ],
+        [ 13.1335895, 52.38691599999984 ],
+        [ 13.1125964999998, 52.41001899999983 ],
+        [ 13.1115705, 52.41313649999984 ],
+        [ 13.09063599999979, 52.41181399999985 ],
+        [ 13.08833299999978, 52.41961149999982 ],
+        [ 13.12167249999979, 52.43781349999983 ],
+        [ 13.12274099999979, 52.43871699999983 ],
+        [ 13.1113574999998, 52.46300949999983 ],
+        [ 13.11079849999979, 52.46606299999984 ],
+        [ 13.1536954999998, 52.50182149999983 ],
+        [ 13.16645749999978, 52.51012449999985 ],
+        [ 13.12685149999979, 52.51756349999985 ],
+        [ 13.11739299999979, 52.51699549999984 ],
+        [ 13.1251129999998, 52.54379549999985 ],
+        [ 13.1306174999998, 52.55635399999983 ],
+        [ 13.14384349999978, 52.55206949999985 ],
+        [ 13.14566499999978, 52.55291149999984 ],
+        [ 13.15012099999978, 52.56759749999983 ],
+        [ 13.1529529999998, 52.57278149999985 ],
+        [ 13.1280969999998, 52.58309749999984 ],
+        [ 13.12898749999979, 52.58744199999984 ],
+        [ 13.15709949999979, 52.59760599999984 ],
+        [ 13.1620815, 52.59838699999982 ],
+        [ 13.20736499999978, 52.58845349999984 ],
+        [ 13.21733649999979, 52.58745549999983 ],
+        [ 13.20208349999979, 52.60448999999983 ],
+        [ 13.2016064999998, 52.60638149999983 ],
+        [ 13.21967099999978, 52.62442249999984 ],
+        [ 13.22068349999978, 52.62817849999985 ],
+        [ 13.26041749999979, 52.62768199999985 ],
+        [ 13.2642745, 52.62692799999984 ],
+        [ 13.28148149999979, 52.65274549999984 ],
+        [ 13.2828844999998, 52.66078449999983 ],
+        [ 13.30756549999978, 52.65930499999985 ],
+        [ 13.31003399999977, 52.65737599999983 ],
+        [ 13.30236449999978, 52.62875899999982 ],
+        [ 13.30242249999978, 52.62756049999984 ],
+        [ 13.35541949999978, 52.62401549999984 ],
+        [ 13.35841149999979, 52.62339599999984 ],
+        [ 13.39304849999979, 52.64564449999983 ],
+        [ 13.3963344999998, 52.64818449999984 ],
+        [ 13.42835899999977, 52.63766649999985 ],
+        [ 13.4326829999998, 52.63750749999983 ],
+        [ 13.46999599999978, 52.65207499999982 ],
+        [ 13.47354499999977, 52.65403949999984 ],
+        [ 13.4508409999998, 52.66272199999982 ],
+        [ 13.45951149999979, 52.66893549999983 ],
+        [ 13.47900199999978, 52.66774599999985 ],
+        [ 13.48821949999979, 52.67055099999985 ],
+        [ 13.48529499999978, 52.65913149999983 ],
+        [ 13.49083149999979, 52.65472849999983 ],
+        [ 13.52049899999977, 52.64525249999983 ],
+        [ 13.5230999999998, 52.64542999999983 ],
+        [ 13.49900399999979, 52.60516349999983 ],
+        [ 13.50815349999979, 52.59218349999983 ],
+        [ 13.5471119999998, 52.58788499999983 ],
+        [ 13.5557804999998, 52.58411949999984 ],
+        [ 13.58729899999977, 52.55243699999983 ],
+        [ 13.5853869999998, 52.54847149999983 ],
+        [ 13.6108275, 52.54423549999984 ]
+          ]
+        ]
+      }
+    };
+    var WATER        = false;
+    var CITY_NAME    = 'berlin';
+  </script>
+  <!-- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/p5.min.js" charset="utf-8"></script>
+  -->
+
+  <script src="js/p5.min.js" charset="utf-8"></script>
+  <script src='js/uri.js'></script>
+  <script src='js/download.js'></script>
+  <script src='js/app.js'></script>
+  <script async='async' defer='defer' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB4GJy_yD262ihGs4chc2UIhUJxOkQmIE0&amp;callback=terrapatternMap.initialize&amp;libraries=places'></script>
+</html>

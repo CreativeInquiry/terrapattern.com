@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- PER-PAGE META -------------------------------------------------- -->
+    <meta charset='utf-8'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link href='images/favicon.ico' rel='icon' type='image/png'>
+    <title>Terrapattern</title>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <meta content='' name='author'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    
+    <!-- CSS ------------------------------------------------------------ -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='css/animate.css' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet'>
+    <link href='css/responsive.css' rel='stylesheet'>
+    <link href='css/interface.css' rel='stylesheet'>
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-78282433-1', 'auto', {'allowLinker': true});
+      ga('require', 'autotrack');
+      ga('require', 'linker');
+      ga('linker:autoLink', ['www.terrapattern.com', 'pgh.terrapattern.com' ,'sf.terrapattern.com' ,'nyc.terrapattern.com' ,'detroit.terrapattern.com' ,'berlin.terrapattern.com' ,'miami.terrapattern.com' ,'austin.terrapattern.com'] );
+      ga('send', 'pageview');
+    </script>
+    <!--
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/0.6.5/autotrack.js'></script>
+    -->
+  </head>
+  <body></body>
+  <header class='animated-header pages-header' id='top-bar'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <div class='navbar-brand'>
+          <a href='index.html'>
+            <img alt='' src='images/terrapattern_logo_white.png'>
+          </a>
+          <em>_alpha</em>
+        </div>
+      </div>
+      <nav class='navbar collapse navbar-collapse navbar-right' role='navigation'>
+        <div class='main-menu'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='dropdown'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                Search a City
+                <span class='caret'></span>
+              </a>
+              <div class='dropdown-menu'>
+                <ul>
+                  <li>
+                    <a href='index-pgh.html'>Pittsburgh</a>
+                  </li>
+                  <li>
+                    <a href='index-sf.html'>San Francisco</a>
+                  </li>
+                  <li>
+                    <a href='index-nyc.html'>New York City</a>
+                  </li>
+                  <li>
+                    <a href='index-detroit.html'>Detroit</a>
+                  </li>
+                  <li>
+                    <a href='index-berlin.html'>Berlin</a>
+                  </li>
+                  <li>
+                    <a href='index-miami.html'>Miami</a>
+                  </li>
+                  <li>
+                    <a href='index-austin.html'>Austin</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href='about.html'>About</a>
+            </li>
+            <li>
+              <a href='team.html'>Team</a>
+            </li>
+            <li>
+              <a href='faq.html'>FAQ</a>
+            </li>
+            <li>
+              <a href='references.html'>References</a>
+            </li>
+            <li>
+              <a href='press.html'>Press</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class='global-page-header'>
+    <div class='container header-content'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <div class='block'>
+            <h1>Austin</h1>
+            <div class='col-md-8 header-description'>
+              <p class='prose'><p>Click on a place in the map to find similar places in Austin</p></p>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 visible-md-block visible-lg-block'>
+          <div class='block wow fadeInUp' data-wow-delay='.3s'>
+            <img alt='' height='100%' src='images/worldmap.svg' width='100%'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='visible-xs-block' id='small-screen-warning'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-xs-12'>
+          <p>During this alpha phase, Terrapattern may not fully support mobile devices.</p>
+          <p>Please revisit the site on a desktop machine for the full experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='pages service-page' id='service-page'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-7'>
+          <p>Click on a feature of interest in the map of Austin below. Terrapattern will find map tiles in the region that look the most similar to the place you selected.  For example, try clicking on <a href='index-lat=30.142467&amp;lng=-97.80620520000002.html'>subdevelopments</a>.</p>
+        </div>
+        <div class='col-md-5'>
+          <p>Below are the top results returned from your search, displayed in a geographic overview, a set of thumbnail images, and a plot of their relative similarity. Download your results as GeoJSON below.</p>
+        </div>
+      </div>
+      <div class='row' id='map_interface'>
+        <div class='overlay' id='searching'>
+          <h4>Searching the Austin metro region...</h4>
+        </div>
+        <div class='col-md-7'>
+          <div class='block'>
+            <div class='row'>
+              <div class='col-md-12'>
+                <input class='controls' id='search_box' placeholder='Search for a location in the Austin metro region' type='text'>
+                <div id='main-map'>
+                  <div id='map'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-5'>
+          <div class='block' id='interface_parts'>
+            <div class='row'>
+              <div class='col-xs-6'>
+                <h4>Geographical Plot</h4>
+              </div>
+              <div class='col-xs-6'>
+                <h4>Similarity Plot</h4>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <div id='mini_displays'></div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <h4>Search Results</h4>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <div id='results_grid'></div>
+                <div id='results_pagination'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='final-section' id='call-to-action'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='block'>
+            <h3 class='wow fadeInDown export' data-wow-delay='.3s' data-wow-duration='500ms'>Export your results as GeoJSON</h3>
+            <a class='btn btn-default btn-contact export-button wow fadeInDown' data-wow-delay='.7s' data-wow-duration='500ms' href='#' id='export'>Export &#10132;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id='footer'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-5'>
+          <h4 id="terrapattern">Terrapattern</h4>
+          
+          <p>Enabling citizen scientists, journalists, and other researchers to detect “patterns of interest” in satellite imagery through an open-source search tool.</p>
+          
+          <p>Developed at the <a href="http://studioforcreativeinquiry.org/">Frank-Ratchye STUDIO for Creative Inquiry</a> at Carnegie Mellon University with support from the <a href="http://knightfoundation.org/grants/201551228/">John S. and James L. Knight Foundation</a> <a href="http://www.knightfoundation.org/funding-initiatives/knight-prototype-fund/">Prototype Fund</a>.</p>
+          <a href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license'>
+            <img alt='Creative Commons License' src='images/cc_by_sa.svg' style='border-width:0'>
+          </a>
+        </div>
+        <div class='col-md-2 col-md-offset-2 reference_links hidden-sm hidden-xs'>
+          <h4 id="links">Links</h4>
+          
+          <ul>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern">Terrapattern Github</a></li>
+          <li><a href="http://github.com/CreativeInquiry/terrapattern-website">Terrapattern Site Github</a></li>
+          <li><a href="https://twitter.com/hashtag/terrapattern">#Terrapattern Tweets</a></li>
+          <li><a href="http://goo.gl/forms/8T7zY28nHm">Visitor Survey</a></li>
+          </ul>
+        </div>
+        <div class='col-md-2 col-md-offset-1 contributors'>
+          <div class='row'>
+            <div class='col-md-12 hidden-sm hidden-xs'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="created-by">Created By</h4>
+              
+              <ul>
+              <li><a href="http://flong.com">Golan Levin</a></li>
+              <li><a href="http://www.workergnome.com">David Newbury</a> </li>
+              <li><a href="http://kylemcdonald.net">Kyle McDonald</a></li>
+              </ul>
+            </div>
+            <div class='col-xs-6 hidden-md hidden-lg hidden-xl'>
+              <h4 id="with-help-from">With Help From</h4>
+              
+              <ul>
+              <li><a href="http://www.irenealvarado.com">Irene Alvarado</a></li>
+              <li><a href="http://amantiwari.com">Aman Tiwari</a></li>
+              <li><a href="http://manzil.ml/">Manzil Zaheer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JAVASCRIPTS ------------------------------------------------------- -->
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src='js/wow.min.js'></script>
+  <script>
+    var MAPS_API_KEY = "AIzaSyB4GJy_yD262ihGs4chc2UIhUJxOkQmIE0";
+    var BOUNDING_BOX = {"sw_lat":30.127592,"sw_lng":-97.9375941,"ne_lat":30.516722,"ne_lng":-97.5620007};
+    var MAP_CENTER   = {"lng":-97.732535,"lat":30.283658};
+    var BOUNDARY     = {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Austin"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-97.928882,30.176392],[-97.938282,30.336971],[-97.916614,30.386755],[-97.900752,30.422358],[-97.805366,30.495723],[-97.795878,30.502778],[-97.790447,30.50567],[-97.748599,30.516863],[-97.714512,30.508409],[-97.667888,30.468105],[-97.591522,30.373309],[-97.566371,30.336564],[-97.561582,30.327453],[-97.561492,30.322394],[-97.565613,30.301354],[-97.587587,30.206355],[-97.603939,30.165351],[-97.624551,30.146701],[-97.78051,30.126997],[-97.91068,30.134911],[-97.916016,30.144617],[-97.928882,30.176392]
+          ]
+        ]
+      }
+    };
+    var WATER        = false;
+    var CITY_NAME    = 'austin';
+  </script>
+  <!-- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/p5.min.js" charset="utf-8"></script>
+  -->
+
+  <script src="js/p5.min.js" charset="utf-8"></script>
+  <script src='js/uri.js'></script>
+  <script src='js/download.js'></script>
+  <script src='js/app.js'></script>
+  <script async='async' defer='defer' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB4GJy_yD262ihGs4chc2UIhUJxOkQmIE0&amp;callback=terrapatternMap.initialize&amp;libraries=places'></script>
+</html>
